@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dressing Intelligent - Your Smart Wardrobe</title>
+    <meta name="description" content="Dressing Intelligent organizes your wardrobe and suggests outfits powered by artificial intelligence.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; }
+        .lang-switch { position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; }
+        .lang-switch a { text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.3); color: #fff; transition: all 0.3s; }
+        .lang-switch a:hover, .lang-switch a.active { background: #fff; color: #6c5ce7; }
+        .hero { background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 50%, #fd79a8 100%); color: white; padding: 100px 20px 80px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); animation: pulse 8s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+        .hero h1 { font-size: 3em; margin-bottom: 16px; position: relative; }
+        .hero p { font-size: 1.3em; opacity: 0.95; max-width: 600px; margin: 0 auto 40px; position: relative; }
+        .badge-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 12px 24px; border-radius: 30px; font-weight: 500; border: 1px solid rgba(255,255,255,0.3); }
+        .features { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2em; margin-bottom: 50px; color: #6c5ce7; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .feature-card { padding: 30px; border-radius: 16px; background: #f8f9ff; border: 1px solid #e8e6ff; transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-4px); }
+        .feature-icon { font-size: 2.5em; margin-bottom: 16px; }
+        .feature-card h3 { color: #6c5ce7; margin-bottom: 8px; font-size: 1.2em; }
+        .feature-card p { color: #666; font-size: 0.95em; }
+        .cta { background: #f8f9ff; padding: 60px 20px; text-align: center; }
+        .cta h2 { font-size: 1.8em; margin-bottom: 12px; color: #1a1a2e; }
+        .cta p { color: #666; margin-bottom: 30px; }
+        .store-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .store-btn { display: inline-flex; align-items: center; gap: 10px; background: #1a1a2e; color: #fff; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 500; transition: background 0.3s; }
+        .store-btn:hover { background: #6c5ce7; }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.7); padding: 40px 20px; text-align: center; }
+        footer a { color: #a29bfe; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 20px; flex-wrap: wrap; }
+        @media (max-width: 600px) { .hero h1 { font-size: 2em; } .hero p { font-size: 1.1em; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="lang-switch">
+            <a href="../index.html">FR</a>
+            <a href="index.html" class="active">EN</a>
+        </div>
+        <h1>Dressing Intelligent</h1>
+        <p>Organize your wardrobe and discover perfect outfits powered by artificial intelligence.</p>
+        <div class="badge-row">
+            <span class="badge">Free</span>
+            <span class="badge">iOS &amp; Android</span>
+            <span class="badge">AI-powered</span>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128248;</div>
+                <h3>Catalog Your Clothes</h3>
+                <p>Take photos of your items and our AI automatically categorizes them by type, color, and season.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#10024;</div>
+                <h3>Outfit Suggestions</h3>
+                <p>Get outfit recommendations based on weather, occasion, and your personal style.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128101;</div>
+                <h3>Multiple Profiles</h3>
+                <p>Manage wardrobes for the whole family from a single account.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9728;&#65039;</div>
+                <h3>Weather-Aware</h3>
+                <p>Suggestions take today's weather into account for optimal comfort.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128274;</div>
+                <h3>Private Data</h3>
+                <p>Your photos and data remain private and secure. You stay in full control.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127769;</div>
+                <h3>Dark Mode</h3>
+                <p>Elegant interface available in both light and dark modes to suit your preference.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to organize your wardrobe?</h2>
+        <p>Download the app for free.</p>
+        <div class="store-buttons">
+            <a href="#" class="store-btn">App Store (coming soon)</a>
+            <a href="#" class="store-btn">Google Play (coming soon)</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:erreurprixfr@gmail.com">Contact</a>
+        </div>
+        <p>&copy; 2026 Dressing Intelligent - NAIDJI SAMIR. All rights reserved.</p>
+    </footer>
+</body>
+</html>
