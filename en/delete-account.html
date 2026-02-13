@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Attira</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.8; }
+        header { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 40px 20px; text-align: center; position: relative; }
+        header h1 { font-size: 2em; margin-bottom: 8px; }
+        header p { opacity: 0.9; }
+        .lang-switch { position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; }
+        .lang-switch a { text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.3); color: #fff; transition: all 0.3s; }
+        .lang-switch a:hover, .lang-switch a.active { background: #fff; color: #6c5ce7; }
+        .content { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
+        h2 { color: #6c5ce7; margin: 30px 0 12px; font-size: 1.4em; }
+        p, li { color: #444; margin-bottom: 10px; }
+        ul { padding-left: 24px; }
+        ol { padding-left: 24px; }
+        ol li { margin-bottom: 16px; }
+        a { color: #6c5ce7; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c5ce7; text-decoration: none; font-weight: 500; }
+        .back-link:hover { text-decoration: underline; }
+        .warning { background: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; border-radius: 8px; margin: 20px 0; }
+        .warning strong { color: #e65100; }
+        .contact-box { background: #f8f9ff; border: 1px solid #e8e6ff; padding: 20px; border-radius: 12px; margin: 20px 0; }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.7); padding: 30px 20px; text-align: center; }
+        footer a { color: #a29bfe; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lang-switch">
+            <a href="../delete-account.html">FR</a>
+            <a href="delete-account.html" class="active">EN</a>
+        </div>
+        <h1>Delete Account</h1>
+        <p>Attira - Smart Wardrobe</p>
+    </header>
+    <div class="content">
+        <a href="index.html" class="back-link">&larr; Back to home</a>
+
+        <h2>How to delete your account</h2>
+        <p>You can delete your Attira account at any time. Deleting your account will permanently erase all your data.</p>
+
+        <h2>Option 1: From the app</h2>
+        <ol>
+            <li>Open the Attira app</li>
+            <li>Go to <strong>Settings</strong> (gear icon)</li>
+            <li>Scroll down to <strong>"Delete my account"</strong></li>
+            <li>Confirm the deletion</li>
+        </ol>
+
+        <h2>Option 2: By email</h2>
+        <p>Send an email to <a href="mailto:erreurprixfr@gmail.com">erreurprixfr@gmail.com</a> with:</p>
+        <ul>
+            <li>Subject: "Account deletion request"</li>
+            <li>The email address associated with your Attira account</li>
+        </ul>
+        <p>We will process your request within <strong>30 days</strong>.</p>
+
+        <div class="warning">
+            <strong>Warning:</strong> Account deletion is irreversible. All of the following data will be permanently deleted:
+            <ul>
+                <li>Your profile and personal information</li>
+                <li>All your clothing photos</li>
+                <li>Your profiles (family)</li>
+                <li>Your outfit history</li>
+                <li>Your preferences and settings</li>
+            </ul>
+        </div>
+
+        <h2>Data deleted</h2>
+        <ul>
+            <li><strong>Account data</strong>: email, display name — deleted immediately</li>
+            <li><strong>Clothing photos</strong>: removed from Cloudinary within 30 days</li>
+            <li><strong>Profile data</strong>: deleted immediately from the database</li>
+            <li><strong>Anonymized technical logs</strong>: retained for up to 90 days (Sentry)</li>
+        </ul>
+
+        <div class="contact-box">
+            <h2 style="margin-top: 0;">Contact</h2>
+            <p>For any questions about account deletion:</p>
+            <p>Email: <a href="mailto:erreurprixfr@gmail.com">erreurprixfr@gmail.com</a></p>
+            <p>Address: NAIDJI SAMIR, 51 rue Salomon Reinach, 69007 Lyon, France</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Attira - NAIDJI SAMIR</p>
+    </footer>
+</body>
+</html>
